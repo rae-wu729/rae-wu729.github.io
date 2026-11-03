@@ -159,10 +159,10 @@ window.portfolio = {
       "number": "03",
       "category": "VISUAL ANALYTICS / MACHINE LEARNING",
       "title": "Finding stellar substructures",
-      "subtitle": "Connecting clustering algorithms with visual exploration.",
+      "subtitle": "Select stars in a projection and find them in 3D to test which ones belong to a cluster.",
       "date": "2024.10 — 2025.03",
       "role": "Independent research · First author",
-      "description": "An interactive visual analytics platform for high-dimensional stellar data, integrating StarGO clustering with linked views and parameter-driven analysis.",
+      "description": "Stars that look close together on the sky can have different motions. Across 85 nearby open clusters and more than 20,000 stellar observations, the study links position, motion and photometry so that researchers can check a candidate group from several angles.",
       "contribution": "Built the frontend and backend with Vue and Flask, connecting data processing and REST APIs to linked visualizations, queries, and analysis feedback.",
       "tags": [
         "Python / Flask",
@@ -178,7 +178,50 @@ window.portfolio = {
       ],
       "caption": "Analysis workflow · algorithm results made explorable",
       "video": "",
-      "paper": 0
+      "paper": 0,
+      "image": "media/stellar-fig-6.png",
+      "imageAlt": "Stellar masses shown in color across a star cluster",
+      "imageCaption": "Figure 6 from the paper. Lower-mass stars appear blue around the outskirts, while higher-mass stars concentrate near the center.",
+      "technicalDetails": [
+        {
+          "title": "Follow one selection across views",
+          "text": "Select a group in the projection, then inspect the same stars in 3D and on parallel coordinates. The Max-Tree lets researchers move from a parent group to smaller subgroups and compare their velocities.",
+          "figure": 0
+        },
+        {
+          "title": "Separate Platais 8 from the field",
+          "text": "The initial point cloud hides the cluster among background stars. Coloring the points by catalog label and narrowing the ranges on parallel coordinates isolates the candidate members.",
+          "figure": 1
+        },
+        {
+          "title": "Check whether the candidates form a core",
+          "text": "Selecting one group at the edge of the projection reveals a compact core in 3D. Another selection picks out widely scattered stars, suggesting possible outliers or a loosely associated halo.",
+          "figure": 2
+        }
+      ],
+      "gallery": [
+        {
+          "src": "media/stellar-fig-3.png",
+          "alt": "Selections and filters propagate between the linked views.",
+          "title": "Figure 3",
+          "caption": "Selections and filters propagate between the linked views.",
+          "source": "https://doi.org/10.1109/ICCBDAI66607.2025.11388769"
+        },
+        {
+          "src": "media/stellar-fig-4.png",
+          "alt": "Platais 8 before labeling, after coloring by label, and after filtering.",
+          "title": "Figure 4",
+          "caption": "Platais 8 before labeling, after coloring by label, and after filtering.",
+          "source": "https://doi.org/10.1109/ICCBDAI66607.2025.11388769"
+        },
+        {
+          "src": "media/stellar-fig-5.png",
+          "alt": "Two selections in the projection produce different spatial patterns.",
+          "title": "Figure 5",
+          "caption": "Two selections in the projection produce different spatial patterns.",
+          "source": "https://doi.org/10.1109/ICCBDAI66607.2025.11388769"
+        }
+      ]
     },
     {
       "id": "fast",
